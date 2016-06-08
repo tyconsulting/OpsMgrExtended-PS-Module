@@ -1,0 +1,24 @@
+{
+    "ConnectionFields":  [
+                             {
+                                 "IsEncrypted":  false,
+                                 "IsOptional":  false,
+                                 "Name":  "ComputerName",
+                                 "TypeName":  "System.String"
+                             },
+                             {
+                                 "IsEncrypted":  false,
+                                 "IsOptional":  false,
+                                 "Name":  "Username",
+                                 "TypeName":  "System.String"
+                             },
+                             {
+                                 "IsEncrypted":  true,
+                                 "IsOptional":  false,
+                                 "Name":  "Password",
+                                 "TypeName":  "System.String"
+                             }
+                         ],
+    "ConnectionTypeName":  "Operations Manager SDK",
+    "IntegrationModuleName":  "OpsMgrExtended"
+}

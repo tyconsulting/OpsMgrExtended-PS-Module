@@ -1,0 +1,5 @@
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\bin\Release\OpsMgrExtended.Types.dll
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\bin\Release\OpsMgrExtended.Types.pdb
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\obj\Release\OpsMgrExtended.Types.csprojResolveAssemblyReference.cache
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\obj\Release\OpsMgrExtended.Types.dll
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\obj\Release\OpsMgrExtended.Types.pdb

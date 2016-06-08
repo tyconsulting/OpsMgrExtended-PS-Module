@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6CAFC0C6-A428-4d30-A9F9-700E829FEA51</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>OpsMgrExtended</Name>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.EnterpriseManagement.Core.dll" />
+    <Content Include="Microsoft.EnterpriseManagement.OperationsManager.dll" />
+    <Content Include="Microsoft.EnterpriseManagement.Runtime.dll" />
+    <Content Include="OpsMgrExtended-Automation.json" />
+    <Content Include="OpsMgrExtended.psd1" />
+    <Content Include="OpsMgrExtended.psm1" />
+    <Content Include="OpsMgrExtendedAdminTasks.psm1" />
+    <Content Include="OpsMgrExtendedMPTasks.psm1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EnterpriseManagement.Core, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Name>Microsoft.EnterpriseManagement.Core</Name>
+      <AssemblyName>Microsoft.EnterpriseManagement.Core.dll</AssemblyName>
+      <HintPath>D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended\Microsoft.EnterpriseManagement.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EnterpriseManagement.OperationsManager, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Name>Microsoft.EnterpriseManagement.OperationsManager</Name>
+      <AssemblyName>Microsoft.EnterpriseManagement.OperationsManager.dll</AssemblyName>
+      <HintPath>D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended\Microsoft.EnterpriseManagement.OperationsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EnterpriseManagement.Runtime, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Name>Microsoft.EnterpriseManagement.Runtime</Name>
+      <AssemblyName>Microsoft.EnterpriseManagement.Runtime.dll</AssemblyName>
+      <HintPath>D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended\Microsoft.EnterpriseManagement.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test Runbooks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LICENSE.txt" />
+    <Compile Include="OpsMgrExnteded.png" />
+    <Compile Include="OpsMgrExtended.Types.dll" />
+    <Compile Include="OpsMgrExtendedTCPPortMonitoring.psm1" />
+    <Compile Include="Test Runbooks\Add-ComputerToComputerGroup.ps1" />
+    <Compile Include="Test Runbooks\Add-MPReference.ps1" />
+    <Compile Include="Test Runbooks\Add-ObjectToInstanceGroup.ps1" />
+    <Compile Include="Test Runbooks\Backup-MP.ps1" />
+    <Compile Include="Test Runbooks\Configure-GroupHealthRollup.ps1" />
+    <Compile Include="Test Runbooks\Configure-ManagementServers.ps1" />
+    <Compile Include="Test Runbooks\Copy-MGSettings.ps1" />
+    <Compile Include="Test Runbooks\Copy-UnsealedMP.ps1" />
+    <Compile Include="Test Runbooks\Create-EventCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\Create-EventMonitor.ps1" />
+    <Compile Include="Test Runbooks\Create-Group.ps1" />
+    <Compile Include="Test Runbooks\Create-OpsMgrMP.ps1" />
+    <Compile Include="Test Runbooks\Create-Override.ps1" />
+    <Compile Include="Test Runbooks\Create-PerfCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\Create-PerformanceMonitor.ps1" />
+    <Compile Include="Test Runbooks\Create-ServiceMonitor.ps1" />
+    <Compile Include="Test Runbooks\Create-TCPPortMonitoring.ps1" />
+    <Compile Include="Test Runbooks\Delete-OpsMgrGroup.ps1" />
+    <Compile Include="Test Runbooks\New-2StateEventMonitor.ps1" />
+    <Compile Include="Test Runbooks\New-ComputerGroups.ps1" />
+    <Compile Include="Test Runbooks\New-ConfigMgrLogCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\New-EventCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\New-InstanceGroups.ps1" />
+    <Compile Include="Test Runbooks\New-PerfCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\New-ServiceMonitor.ps1" />
+    <Compile Include="Test Runbooks\New-WindowsServiceTemplateInstance.ps1" />
+    <Compile Include="Test Runbooks\New-WMIPerfCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\New-WindowsEventAlertRule.ps1" />
+    <Compile Include="Test Runbooks\New-WMIEventCollectionRule.ps1" />
+    <Compile Include="Test Runbooks\Populate-MPList.ps1" />
+    <Compile Include="Test Runbooks\Update-GroupDiscovery.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+</Project>

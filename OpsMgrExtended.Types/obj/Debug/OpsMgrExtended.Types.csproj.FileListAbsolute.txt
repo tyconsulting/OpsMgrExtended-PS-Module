@@ -1,0 +1,3 @@
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\bin\Debug\OpsMgrExtended.Types.dll
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\obj\Debug\OpsMgrExtended.Types.csprojResolveAssemblyReference.cache
+D:\Documents\Source\Workspaces\OpsMgrSDK\OpsMgrSDK\OpsMgrExtended.Types\obj\Debug\OpsMgrExtended.Types.dll
