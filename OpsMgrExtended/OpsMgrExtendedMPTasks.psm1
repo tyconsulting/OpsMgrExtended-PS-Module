@@ -1944,28 +1944,28 @@ Function New-OMPropertyOverride
 		"RulePropertyOverride"
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRuleCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRules($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringRules($WorkflowCriteria)[0]
 			$Override = New-Object Microsoft.EnterpriseManagement.Configuration.ManagementPackRulePropertyOverride($MP, $OverrideName)
 			$Override.Rule = $Workflow
 		}
 		'DiscoveryPropertyOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiscoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiscoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiscoveries($WorkflowCriteria)[0]
 			$Override = New-Object Microsoft.EnterpriseManagement.Configuration.ManagementPackDiscoveryPropertyOverride($MP, $OverrideName)
 			$Override.Discovery = $Workflow
 		}
 		'DiagnosticPropertyOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiagnosticCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiagnostics($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiagnostics($WorkflowCriteria)[0]
 			$Override = New-Object Microsoft.EnterpriseManagement.Configuration.ManagementPackDiagnosticPropertyOverride($MP, $OverrideName)
 			$Override.Diagnostic = $Workflow
 		}
 		'RecoveryPropertyOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRecoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRecoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringRecoveries($WorkflowCriteria)[0]
 			$Override = New-Object Microsoft.EnterpriseManagement.Configuration.ManagementPackRecoveryPropertyOverride($MP, $OverrideName)
 			$Override.Recovery = $Workflow
 		}
@@ -2183,22 +2183,22 @@ Function New-OMConfigurationOverride
 		"RuleConfigurationOverride"
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRuleCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRules($WorkflowCriteria)[0]		
+			$Workflow = $MG.GetMonitoringRules($WorkflowCriteria)[0]		
 		}
 		'DiscoveryConfigurationOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiscoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiscoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiscoveries($WorkflowCriteria)[0]
 		}
 		'DiagnosticConfigurationOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiagnosticCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiagnostics($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiagnostics($WorkflowCriteria)[0]
 		}
 		'RecoveryConfigurationOverride'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRecoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRecoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringRecoveries($WorkflowCriteria)[0]
 		}
 	}
 
@@ -2565,7 +2565,7 @@ Function New-OMOverride
 		"Rule"
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRuleCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRules($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringRules($WorkflowCriteria)[0]
 			#The only possible override property for rules is Enabled (http://msdn.microsoft.com/en-us/library/microsoft.enterprisemanagement.configuration.managementpackrulepropertyoverride.aspx)
 			If ($OverrideParameter -ieq "Enabled")
 			{
@@ -2577,7 +2577,7 @@ Function New-OMOverride
 		'Discovery'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiscoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiscoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiscoveries($WorkflowCriteria)[0]
 			#The only possible override property for discoveries is Enabled (http://msdn.microsoft.com/en-us/library/microsoft.enterprisemanagement.configuration.managementpackdiscoverypropertyoverride.aspx)
 			If ($OverrideParameter -ieq "Enabled")
 			{
@@ -2589,7 +2589,7 @@ Function New-OMOverride
 		'Diagnostic'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringDiagnosticCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringDiagnostics($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringDiagnostics($WorkflowCriteria)[0]
 			#The only possible override property for diagnostics is Enabled (http://msdn.microsoft.com/en-us/library/microsoft.enterprisemanagement.configuration.managementpackdiagnosticpropertyoverride.aspx)
 			If ($OverrideParameter -ieq "Enabled")
 			{
@@ -2601,7 +2601,7 @@ Function New-OMOverride
 		'Recovery'
 		{
 			$WorkflowCriteria = New-Object Microsoft.EnterpriseManagement.Configuration.MonitoringRecoveryCriteria("Name='$OverrideWorkflow'")
-			$Workflow = $MonitoringClass.GetMonitoringRecoveries($WorkflowCriteria)[0]
+			$Workflow = $MG.GetMonitoringRecoveries($WorkflowCriteria)[0]
 			#The only possible override property for recoveries is Enabled (http://msdn.microsoft.com/en-us/library/microsoft.enterprisemanagement.configuration.managementpackrecoverypropertyoverride.aspx)
 			If ($OverrideParameter -ieq "Enabled")
 			{
@@ -3749,12 +3749,6 @@ Function New-OMAlertConfiguration
         [Parameter(Mandatory=$true,HelpMessage='Please enter the Alert Message String Resource ID')][System.String]$StringResource
     )
 
-	#Make sure the OpsMgrExnteded.Types Assembly is loaded
-	If (!([AppDomain]::CurrentDomain.GetAssemblies() |Where-Object { $_.FullName -eq 'OpsMgrExtended.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23140eab7fb5cf37' }))
-	{
-		$OpsMgrExtendedTypesDLLPath = Join-Path $PSScriptRoot "OpsMgrExtended.Types.Dll"
-		Add-Type -Path $OpsMgrExtendedTypesDLLPath
-	}
 	$objAlertConfig = New-Object OpsMgrExtended.AlertConfiguration -Property @{AlertName = $AlertName; AlertDescription = $AlertDescription; LanguagePackID = $LanguagePackID; StringResource = $StringResource}
 	$objAlertConfig
 }
@@ -3807,12 +3801,6 @@ Function New-OMModuleConfiguration
 		[Parameter(Mandatory=$false,HelpMessage='Please enter the RunAs account name')][System.String]$RunAsName
     )
 
-	#Make sure the OpsMgrExnteded.Types Assembly is loaded
-	If (!([AppDomain]::CurrentDomain.GetAssemblies() |Where-Object { $_.FullName -eq 'OpsMgrExtended.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23140eab7fb5cf37' }))
-	{
-		$OpsMgrExtendedTypesDLLPath = Join-Path $PSScriptRoot "OpsMgrExtended.Types.Dll"
-		Add-Type -Path $OpsMgrExtendedTypesDLLPath
-	}
 	$objModuleConfig = New-Object OpsMgrExtended.ModuleConfiguration -Property @{ModuleTypeName = $ModuleTypeName; Configuration = $Configuration; MemberModuleName = $MemberModuleName; RunAsMPName = $RunAsMPName; RunAsName = $RunAsName}
 	$objModuleConfig
 }
