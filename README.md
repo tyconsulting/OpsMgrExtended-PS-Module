@@ -5,6 +5,8 @@ The OpsMgrExtended PowerShell module automates several SCOM administrative and a
 * Introduction: http://blog.tyang.org/2015/06/24/automating-opsmgr-part-1-introducing-opsmgrextended-powershell-sma-module/
 * Automating OpsMgr blog series: https://blog.tyang.org/tag/automating-opsmgr/
 
+This module can also be found in PowerShell Gallery: https://www.powershellgallery.com/packages/OpsMgrExtended/1.3.0
+
 ## Version History
 ### Current version: v1.3.0
 Change logs:
