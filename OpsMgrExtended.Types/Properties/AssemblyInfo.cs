@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TY Consulting Pty Ltd")]
 [assembly: AssemblyProduct("OpsMgrExtended.Types")]
-[assembly: AssemblyCopyright("Copyright © TY Consulting Pty Ltd 2015")]
+[assembly: AssemblyCopyright("Copyright © TY Consulting Pty Ltd 2015-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
