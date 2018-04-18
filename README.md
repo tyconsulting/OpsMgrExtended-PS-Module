@@ -8,7 +8,12 @@ The OpsMgrExtended PowerShell module automates several SCOM administrative and a
 This module can also be found in PowerShell Gallery: https://www.powershellgallery.com/packages/OpsMgrExtended/1.3.0
 
 ## Version History
-### Current version: v1.3.0
+
+### Current version: v1.3.1
+Change logs:
+* Bug fix in Copy-OMManagementPack function. the password fields should be secureString.
+* 
+### Version: v1.3.0
 Change logs:
 * Bug fixes in New-OMOverride function
 * Added SCOM 2016 SDK DLLs to the module (SCOM 2016 UR14)

@@ -3461,10 +3461,10 @@ Function Copy-OMManagementPack
 		[Parameter(ParameterSetName='SMAConnection',Mandatory=$true,HelpMessage='Please specify the SMA Connection object')][Alias('DestinationMG','d')][System.Object]$DestinationSDKConnection,
 		[Parameter(ParameterSetName='IndividualParameter',Mandatory=$true,HelpMessage='Please enter the Management Server name')][Alias('SDAS','SServer')][System.String]$SourceSDK,
         [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the user name to connect to the OpsMgr management group')][Alias('su')][System.String]$SourceUsername = $null,
-        [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the password to connect to the OpsMgr management group')][Alias('sp')][System.String]$SourcePassword = $null,
+        [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the password to connect to the OpsMgr management group')][Alias('sp')][SecureString]$SourcePassword = $null,
 		[Parameter(ParameterSetName='IndividualParameter',Mandatory=$true,HelpMessage='Please enter the Management Server name')][Alias('DDAS','DServer')][System.String]$DestinationSDK,
         [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the user name to connect to the OpsMgr management group')][Alias('du')][System.String]$DestinationUsername = $null,
-        [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the password to connect to the OpsMgr management group')][Alias('dp')][System.String]$DestinationPassword = $null,
+        [Parameter(ParameterSetName='IndividualParameter',Mandatory=$false,HelpMessage='Please enter the password to connect to the OpsMgr management group')][Alias('dp')][SecureString]$DestinationPassword = $null,
         [Parameter(Mandatory=$true,HelpMessage='Please enter Management Pack name')][System.String]$MPName,
 		[Parameter(Mandatory=$false,HelpMessage='Please specify if existing Management Pack in the destination management group will be overwritten.')][System.Boolean]$Overwrite = $false
     )
